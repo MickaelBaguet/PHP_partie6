@@ -17,11 +17,9 @@
       </div>
     </div>
     <a href="index.php?lastname=Nemare&firstname=Jean" class="btn btn-primary">Afficher Nom / Prénom</a>
-    <!-- Balise signifiant que la suite est en PHP -->
     <p>
         <?php
             // On a le nom et le prénom
-            
             if (isset($_GET['lastname']) && isset($_GET['firstname'])) {
                 echo 'Bonjour ' . $_GET['lastname'] . ' ' . $_GET['firstname'] . ' !';
             } else {

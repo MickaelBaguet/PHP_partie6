@@ -17,7 +17,6 @@
       </div>
     </div>
     <a href="index.php?building=12&room=101" class="btn btn-primary">Afficher info</a>
-    <!-- Balise signifiant que la suite est en PHP -->
     <p>
         <?php
             if (isset($_GET['building']) && isset($_GET['room'])) {

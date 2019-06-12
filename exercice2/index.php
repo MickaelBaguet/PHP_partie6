@@ -16,12 +16,9 @@
         <a href="../index.php" class="btn btn-primary">Retour</a>
       </div>
     </div>
-    <a href="index.php?lastname=Nemare&firstname=Jean&age=16" class="btn btn-primary">Afficher Age</a>
-    <!-- Balise signifiant que la suite est en PHP -->
+    <a href="index.php?lastname=Nemare&firstname=Jean" class="btn btn-primary">Afficher Age</a>
     <p>
         <?php
-            $age = 16;
-            //if (isset($_GET['lastname']) && isset($_GET['firstname'])) {
             if (isset($_GET['age'])) {
                 echo 'Tu as ' . $_GET['age'].' !';
             } else {

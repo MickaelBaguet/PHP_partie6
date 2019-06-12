@@ -17,11 +17,9 @@
       </div>
     </div>
     <a href="index.php?startDate=2/05/2016&endDate=27/11/2016" class="btn btn-primary">Afficher dates</a>
-    <!-- Balise signifiant que la suite est en PHP -->
     <p>
         <?php
             if (isset($_GET['startDate']) && isset($_GET['endDate'])) {
-            //if (isset($_GET['age'])) {
                 echo 'Date début : ' . $_GET['startDate'] . ', Date fin : ' . $_GET['endDate'] . ' !';
             } else {
                 // Il manque des paramètres, on avertit le visiteur

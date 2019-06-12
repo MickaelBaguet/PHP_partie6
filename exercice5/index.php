@@ -17,7 +17,6 @@
       </div>
     </div>
     <a href="index.php?week=12" class="btn btn-primary">Afficher info</a>
-    <!-- Balise signifiant que la suite est en PHP -->
     <p>
         <?php
             if (isset($_GET['week'])) {

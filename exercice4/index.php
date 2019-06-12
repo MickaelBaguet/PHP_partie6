@@ -17,11 +17,9 @@
       </div>
     </div>
     <a href="index.php?language=PHP&server=LAMP" class="btn btn-primary">Afficher info</a>
-    <!-- Balise signifiant que la suite est en PHP -->
     <p>
         <?php
             if (isset($_GET['language']) && isset($_GET['server'])) {
-            //if (isset($_GET['age'])) {
                 echo 'Langage : ' . $_GET['language'] . ', Serveur : ' . $_GET['server'] . ' !';
             } else {
                 // Il manque des paramètres, on avertit le visiteur
